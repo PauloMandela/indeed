@@ -1,0 +1,135 @@
+.nav-tabs {
+  border-bottom: 1px solid $grey-color;
+}
+
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+  color: $black;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  border-bottom: 2px solid $main-color;
+  color: $main-color;
+  background-color: transparent;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $main-color !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem transparent;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem $main-color
+}
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: transparent;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: transparent;
+}
+
+.chip {
+  display: inline-block !important;
+  padding: 0 10px;
+  font-size: 14px;
+  background-color: #c8e9fa;
+  border-color: $grey-color;
+  color: #03b1fc;
+  font-weight: bolder;
+  margin: 10px 10px;
+  float: left;
+}
+
+.close-btn {
+  padding-left: 10px;
+  color: #888888;
+  font-weight: bold;
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+
+/* Loader */
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
+  //text-align: center;
+}
+
+
+/* end loader */

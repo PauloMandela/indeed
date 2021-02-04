@@ -1,0 +1,4 @@
+countries-main/
+*.zip
+node_modules
+*.txt
